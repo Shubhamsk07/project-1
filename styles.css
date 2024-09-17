@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.05) 31%), radial-gradient(circle at center, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.05) 11%);
+    background-size: 120px 120px;
+    opacity: 0.2;
+    z-index: -1;
+    /* Ensure it's behind the content */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    opacity: 0.1;
+    /* Adjust this for more/less visibility */
+    z-index: -1;
+    /* Ensure it's behind the content */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    justify-content: flex-start;
+}
+
+.triangle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    margin-top: 90px;
+    width: 300px;
+}
+
+
+/* Large triangle */
+
+.large-triangle {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid #006E90;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg)
+}
+
+
+/* Small triangles */
+
+.small-triangle {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #00AEEF;
+    position: absolute;
+}
+
+.another {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 90px solid white;
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    transform: rotate(270deg);
+}
+
+.small-triangle.one {
+    position: relative;
+    top: 11px;
+    right: 70px;
+}
+
+.another1 {
+    width: 0;
+    height: 0;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    border-bottom: 115px solid white;
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    z-index: 10;
+    transform: rotate(90deg)
+}
+
+.small-triangle.two {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 90px solid #006E90;
+    position: relative;
+    transform: rotate(0);
+    top: 15px;
+    left: -90px;
+}
+
+.three {
+    width: 0;
+    height: 0;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 130px solid #00AEEF;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 145px;
+    left: 45px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.website-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+.date {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    top: -170px;
+}
+
+.images .img1 {
+    width: 840px;
+    height: 100%;
+    border: solid 10px white;
+}
+
+.robot1 {
+    width: 700px;
+}
+
+.greeting,
+.about-company,
+.job-details,
+.job-description,
+.eligibility-criteria {
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.about-company {
+    position: relative;
+    top: -120px;
+    padding: 5px 10px 0 10px;
+    width: 100%;
+    background-color: #c9e5ef;
+    border-radius: 15px;
+    padding-bottom: 40px;
+}
+
+.company-name {
+    position: relative;
+    left: -7px;
+    padding-left: 6px;
+    border-radius: 2px;
+    width: 900px;
+    background-color: #0297cd;
+    color: white;
+}
+
+.website-link {
+    color: #006E90;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.company-name p {
+    font-size: 24px;
+}
+
+.para1 {
+    font-size: 22px;
+    color: black;
+}
+
+.greeting {
+    position: relative;
+    top: -80px;
+}
+
+.greeting span {
+    font-size: 84px;
+    color: rgba(15, 14, 14, 0.852)
+}
+
+.greeting span span {
+    color: #0187b8;
+}
+
+.greet {
+    text-transform: uppercase;
+    font-stretch: expanded;
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: #006E90;
+}
+
+.about-org {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-stretch: expanded;
+    color: black;
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.images1 {
+    display: flex;
+    position: relative;
+    top: -120px;
+    justify-content: space-between;
+}
+
+.images1 .kritma {
+    margin-top: 120px;
+}
+
+.work-with-us {
+    position: relative;
+    bottom: 80px;
+    border: solid 1.8px #0093ef;
+    border-radius: 5px;
+}
+
+.work-with-us .why {
+    padding-top: 5px;
+    background-color: #00b7ea;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.979);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.work-with-us h2 {
+    font-size: 26px;
+}
+
+.work-with-us ul {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.domains {
+    position: relative;
+    top: -140px;
+    width: 730px;
+}
+
+.domains img {
+    width: 100%;
+}
+
+.bars {
+    display: flex;
+    position: relative;
+    top: -130px;
+    flex-direction: column;
+    gap: 40px;
+    left: -15px;
+}
+
+.bars h2,
+.location {
+    width: 760px;
+    padding-left: 10px;
+    padding-top: 3px;
+    background-color: rgba(70, 118, 130, 0.201);
+    color: #0081a8;
+    font-size: 30px;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.num span {
+    font-size: 30px !important;
+    padding-left: 50px !important;
+}
+
+.bars span {
+    padding-left: 22px;
+    color: black;
+    font-size: 22px;
+    padding-top: 3px
+}
+
+.main {
+    display: flex;
+    position: relative;
+    top: -160px;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.part1 h2 {
+    width: 390px;
+    padding-left: 10px;
+    padding-top: 3px;
+    background-color: rgba(70, 118, 130, 0.201);
+    color: #0081a8;
+    font-size: 30px;
+    border-radius: 15px;
+    position: relative;
+    top: -15px;
+    height: 50px;
+}
+
+.ai {
+    font-size: 40px;
+    position: relative;
+    top: -140px;
+    color: black;
+    padding-left: 14px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.location span {
+    padding-left: 8px !important;
+}
+
+.main>img {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: 70px;
+}
+
+.blue-box {
+    position: relative;
+    top: -80px;
+    width: 730px;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 6px;
+    height: 50px;
+    background-color: #00AEEF;
+    color: rgba(255, 255, 255, 0.906)
+}
+
+.blue-outline {
+    padding-left: 14px;
+    text-align: start;
+    position: relative;
+    top: -70px;
+    left: 5px;
+    width: 720px;
+    font-weight: bold;
+    height: 120px;
+    border: solid 3px #00AEEF;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.blue-outline1 {
+    padding-left: 14px;
+    text-align: start;
+    position: relative;
+    top: -70px;
+    left: 5px;
+    width: 720px;
+    font-weight: bold;
+    height: 170px;
+    border: solid 2px #00AEEF;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.blue-outline3 {
+    padding-left: 14px;
+    text-align: start;
+    position: relative;
+    top: -70px;
+    left: 5px;
+    width: 720px;
+    font-weight: bold;
+    height: 250px;
+    border: solid 2px #00AEEF;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.blue-outline1 ul {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 210px;
+}
+
+.blue-outline1 ul li {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.blue-outline p {
+    padding-top: 18px;
+    font-size: 22px;
+}
+
+.why-new {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.loco {
+    margin-bottom: 30px !important;
+}
+
+.loco1 {
+    height: 300px !important;
+}
+
+.loco1 h1 {
+    padding: 75px;
+}
+
+.note {
+    position: relative;
+    top: -47px;
+    text-align: center;
+    border-bottom: solid 2px #0093ef;
+    height: 130px;
+}
+
+.note p {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 700px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+address {
+    padding-left: 90px;
+    padding-right: 80px;
+    font-style: normal;
+}
